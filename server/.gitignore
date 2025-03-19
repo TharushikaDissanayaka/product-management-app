@@ -1,0 +1,49 @@
+# --- Visual Studio and Build Files ---
+.vs/
+*.suo
+*.user
+*.rsuser
+*.sln.docstates
+
+# --- Compiled Binaries and Packages ---
+bin/
+obj/
+Debug/
+Release/
+out/
+[Bb]uild/
+[Tt]est[Rr]esults/
+**/packages/*
+*.nupkg
+*.nuget.*
+
+# --- ASP.NET Core Specific Files ---
+# Ignore local development settings but keep production settings
+appsettings.Development.json
+appsettings.Local.json
+
+# Ignore the entire `wwwroot/` except essential static files
+wwwroot/dist/
+wwwroot/node_modules/
+
+# --- Node.js Dependencies (for Frontend inside .NET Project) ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Logs and Database Files ---
+logs/
+*.log
+*.mdf
+*.ldf
+
+# --- Resharper, Rider, and Code Analysis Tools ---
+*.DotSettings.user
+_ReSharper*/
+*.DotSettings
+.idea/
+*.code-workspace
+
+# --- Docker and Container Files ---
+docker-compose.override.yml
