@@ -1,1 +1,29 @@
-<p>product-add-form works!</p>
+<div>
+    <form [formGroup]="productAddForm" (submit)="submitForm()">
+        <label for="product-name">Product Name</label>
+        <input type="text" id="product-name" formControlName="name" autocomplete="off">
+
+        <label for="product-description">Product Description</label>
+        <input type="text" id="product-description" formControlName="description" autocomplete="off">
+
+        <label for="product-category">Product Category</label>
+        <select name="category" id="product-category" formControlName="category">
+            <option value="99">Select Product Category</option>
+            <option value="0">Electronics</option>
+            <option value="1">Clothing</option>
+            <option value="2">Home Appliance</option>
+            <option value="3">Books</option>
+            <option value="4">Toys</option>
+            <option value="5">Shoes</option>
+            <option value="6">Beauty</option>
+        </select>
+
+        <label for="product-price">Product Price</label>
+        <input type="number" id="product-price" formControlName="price" autocomplete="off">
+
+        <label for="product-quantity">Product Quantity</label>
+        <input type="number" id="product-quantity" formControlName="quantity" autocomplete="off">
+
+        <button type="submit">Add</button>
+    </form>
+</div>
